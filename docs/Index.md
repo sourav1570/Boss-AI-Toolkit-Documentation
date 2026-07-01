@@ -17,4 +17,3 @@ This section is about combat behavior.
 [Great](https://www.youtube.com/watch?v=jpeh1WorrWM)
 
 #### Emergency Covers
-
