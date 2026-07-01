@@ -1,4 +1,4 @@
-site_name: DOCUMENTATION
+source venv/bin/activatesite_name: DOCUMENTATION
 nav:
   - MOBILE ACTION KIT:
     - Get Started: GetStarted.md
