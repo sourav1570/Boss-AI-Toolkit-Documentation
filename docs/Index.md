@@ -1,17 +1,20 @@
-# Welcome to MkDocs
+# 🤖 Humanoid Ai
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## 🤖 Setting Up Ragdoll
+The AI provided in the kit is really cool, and you should learn how to create your own AI system.Hello Sourav
 
-## Commands
+### Getting Started
+This section is essential.
+[Tutorials For AI](https://www.youtube.com/watch?v=jpeh1WorrWM)
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+#### Emergency Cover
+This section is about emergency behavior.
 
-## Project layout
+![Cool](https://play-lh.googleusercontent.com/N5OhX0Em8Uuu5B4JaXKZmwzy-0UUfGiF3OjDxdGic1m49DJyNujFgPFZSa0AJf4hiIKP)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+#### Combat Covers
+This section is about combat behavior.
+[Great](https://www.youtube.com/watch?v=jpeh1WorrWM)
+
+#### Emergency Covers
+

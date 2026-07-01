@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<a href="javascript:window.print()" title="Print Site" class="md-content__button md-icon">
+    {% include ".icons/material/printer.svg" %}
+</a>
+
+{{ super() }}
+{% endblock content %}
