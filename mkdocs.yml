@@ -5,7 +5,7 @@ nav:
     - Get Started: index.md
     - Player:
        - test: index.md
-       - Player Setup: PlayerSetup.md
+       - Player Setup: index.md
        - Minimap Setup: PlayerMiniMapSetup.md
        - Player Health: PlayerHealthSetup.md
        - Footstep Sounds Based On Surfaces: PlayerFootstepSoundsBasedOnSurfaces.md
@@ -104,7 +104,7 @@ nav:
   #   - Basic Setup:
   #      - Animation: Helibase.md
   #      - Collider: Helibase.md
-  - SUPPORT: Support.md
+  - SUPPORT: index.md
 docs_dir: docs
 use_directory_urls: false
 theme:
