@@ -1,8 +1,8 @@
 site_name: DOCUMENTATION
 
 nav:
-  - Home: GetStarted.md
   - MOBILE ACTION KIT:
+    - Home: Index.md
     - Get Started: GetStarted.md
     - Player:
        - test: test.md
