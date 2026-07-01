@@ -135,8 +135,6 @@ theme:
       accent:  black
 plugins:
   - search
-extra_css:
-  - overrides/extra.css
 extra:
   social:
     - icon: fontawesome/brands/discord
