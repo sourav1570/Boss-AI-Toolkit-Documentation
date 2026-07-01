@@ -110,7 +110,6 @@ theme:
   name: material
   logo: Images/Logo.png
   favicon: Images/Logo.png
-  custom_dir: docs/overrides
   nav_style: default
   features:
     - navigation.tabs
