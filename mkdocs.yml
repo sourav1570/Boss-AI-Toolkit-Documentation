@@ -1,4 +1,5 @@
 site_name: DOCUMENTATION
+site_url: https://sourav1570.github.io/Boss-AI-Toolkit-Documentation/
 nav:
   - MOBILE ACTION KIT:
     - Get Started: index.md
