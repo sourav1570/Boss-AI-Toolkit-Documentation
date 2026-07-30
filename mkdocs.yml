@@ -1,12 +1,18 @@
 site_name: DOCUMENTATION
 site_url: https://sourav1570.github.io/Boss-AI-Toolkit-Documentation/
 nav:
-  - MOBILE ACTION KIT:
-    - Get Started: index.md
-    - Player:
-       - test: index.md
-    - Shop: index.md
-  - SUPPORT: index.md
+  - BOSS AI TOOLKIT:
+    - Getting Started: GettingStarted.md
+    - First Boss Setup: FirstBossSetup.md
+    - Non Combat Behaviour: NonCombatBehaviour.md
+    - Smart Turning Behaviour: SmartTurningBehaviour.md
+    - Pre Combat Behaviour: PreCombatBehaviour.md
+    - Melee Attack: MeleeAttack.md
+    - Ground Slam: GroundSlam.md
+    - Flame Thrower: FlameThrower.md
+    - Charging Attack: Charging.md
+    - Jump Attack: JumpAttack.md
+    - Teleportation: Teleportation.md
 docs_dir: docs
 use_directory_urls: false
 theme:
@@ -35,6 +41,8 @@ theme:
       accent:  black
 plugins:
   - search
+extra_css:
+  - stylesheets/extra.css
 extra:
   social:
     - icon: fontawesome/brands/discord
@@ -42,4 +50,4 @@ extra:
     - icon: fontawesome/solid/envelope
       link: https://mail.google.com/
 copyright: |
-   &copy; 2025 <a href="Mobile Action Kit" target="_blank" rel="noopener">MobileActionKit</a>
+   &copy; 2026 <a href="Mobile Action Kit" target="_blank" rel="noopener">BossAIToolkit</a>
