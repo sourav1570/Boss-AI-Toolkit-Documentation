@@ -2,7 +2,7 @@
 
 <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
     <iframe
-        src="https://www.youtube.com/embed/https:/lqI3rThVWBQ"
+        src="https://www.youtube.com/embed/lqI3rThVWBQ"
         title="Boss AI Toolkit Tutorial"
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -1,4 +1,4 @@
-# Jump Attack Ability (Boss AI Toolkit)
+# Jump Attack
 
 <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
     <iframe

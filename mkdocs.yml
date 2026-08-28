@@ -13,6 +13,22 @@ nav:
     - Charging Attack: Charging.md
     - Jump Attack: JumpAttack.md
     - Teleportation: Teleportation.md
+    - Chase And Attack: ChaseAndAttack.md
+    - Meteor Strike: MeteorStrike.md
+    - Throw Weapon: Throw_Weapon.md
+    - Projectile Attack: ProjectileAttack.md
+    - Throw Objects: Throw_Objects.md
+    - Spit Attack: Spit_Attack.md
+    - Summon Minions: Summon_Minions.md
+    - Boss Voices: Boss_Voices.md
+    - Player Setup: Player_Setup.md
+    - PC Controls: PC_Controls.md
+    - Boss Health System: BossHealth.md
+    - Player Vs Boss Setup: PlayerVsBoss_Setup.md
+    - Player Vs Spider Boss Setup: PlayerVsSpiderBoss_Setup.md
+    - Knight Enemy Setup: KnightEnemySetup.md
+    - Spear Capturer Enemy Setup: SpearCapturerEnemySetup.md
+    - Spear Thrower Enemy Setup: SpearThrowerEnemySetup.md
 docs_dir: docs
 use_directory_urls: false
 theme:
