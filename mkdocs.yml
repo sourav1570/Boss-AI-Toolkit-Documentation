@@ -28,7 +28,9 @@ nav:
     - Player Vs Spider Boss Setup: PlayerVsSpiderBoss_Setup.md
     - Knight Enemy Setup: KnightEnemySetup.md
     - Spear Capturer Enemy Setup: SpearCapturerEnemySetup.md
-    - Spear Thrower Enemy Setup: SpearThrowerEnemySetup.md
+    - Spear Spawner Enemy Setup: SpearSpawnerEnemySetup.md
+    - Rock Thrower Enemy Setup: RockThrowerEnemySetup.md
+    - Archer Enemy Setup: ArcherEnemySetup.md
 docs_dir: docs
 use_directory_urls: false
 theme:
