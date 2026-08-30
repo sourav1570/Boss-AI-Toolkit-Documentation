@@ -1,0 +1,1871 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://sourav1570.github.io/Boss-AI-Toolkit-Documentation/FlameThrower.html">
+      
+      
+        <link rel="prev" href="GroundSlam.html">
+      
+      
+        <link rel="next" href="Charging.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Flame Thrower - DOCUMENTATION</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#flamethrower" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="DOCUMENTATION" class="md-header__button md-logo" aria-label="DOCUMENTATION" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DOCUMENTATION
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Flame Thrower
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="white"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="black"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="GettingStarted.html" class="md-tabs__link">
+          
+  
+  
+  BOSS AI TOOLKIT
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="DOCUMENTATION" class="md-nav__button md-logo" aria-label="DOCUMENTATION" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DOCUMENTATION
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BOSS AI TOOLKIT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    BOSS AI TOOLKIT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GettingStarted.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="FirstBossSetup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    First Boss Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="NonCombatBehaviour.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non Combat Behaviour
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SmartTurningBehaviour.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smart Turning Behaviour
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PreCombatBehaviour.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pre Combat Behaviour
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MeleeAttack.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Melee Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GroundSlam.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ground Slam
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flame Thrower
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="FlameThrower.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flame Thrower
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview-ability-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Overview &amp; Ability Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Overview &amp; Ability Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-animation-import-trimming-animator-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Animation Import, Trimming &amp; Animator Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Animation Import, Trimming &amp; Animator Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-importing-trimming-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Importing &amp; Trimming Animation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-adding-to-boss-animator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Adding to Boss Animator
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-particle-effect-bone-placement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Particle Effect &amp; Bone Placement
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Particle Effect &amp; Bone Placement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-damage-area-hitbox-setup-continuous-damage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Damage Area &amp; Hitbox Setup (Continuous Damage)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Damage Area &amp; Hitbox Setup (Continuous Damage)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-creating-the-damage-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Creating the Damage Area
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-configuring-the-continuous-hitbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Configuring the Continuous Hitbox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-linking-ability-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Linking Ability Parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Linking Ability Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-sound-setup-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Sound Setup (Optional)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Sound Setup (Optional)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-testing-verification-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Testing &amp; Verification Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Charging.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Charging Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="JumpAttack.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jump Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Teleportation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teleportation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChaseAndAttack.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chase And Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MeteorStrike.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meteor Strike
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Throw_Weapon.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Throw Weapon
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ProjectileAttack.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projectile Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Throw_Objects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Throw Objects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Spit_Attack.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spit Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Summon_Minions.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summon Minions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Boss_Voices.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boss Voices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Player_Setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Player Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PC_Controls.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PC Controls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BossHealth.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boss Health System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PlayerVsBoss_Setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Player Vs Boss Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PlayerVsSpiderBoss_Setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Player Vs Spider Boss Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="KnightEnemySetup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Knight Enemy Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SpearCapturerEnemySetup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spear Capturer Enemy Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SpearSpawnerEnemySetup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spear Spawner Enemy Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RockThrowerEnemySetup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rock Thrower Enemy Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ArcherEnemySetup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archer Enemy Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview-ability-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Overview &amp; Ability Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Overview &amp; Ability Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-animation-import-trimming-animator-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Animation Import, Trimming &amp; Animator Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Animation Import, Trimming &amp; Animator Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-importing-trimming-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Importing &amp; Trimming Animation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-adding-to-boss-animator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Adding to Boss Animator
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-particle-effect-bone-placement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Particle Effect &amp; Bone Placement
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Particle Effect &amp; Bone Placement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-damage-area-hitbox-setup-continuous-damage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Damage Area &amp; Hitbox Setup (Continuous Damage)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Damage Area &amp; Hitbox Setup (Continuous Damage)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-creating-the-damage-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Creating the Damage Area
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-configuring-the-continuous-hitbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Configuring the Continuous Hitbox
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-linking-ability-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Linking Ability Parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Linking Ability Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-sound-setup-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Sound Setup (Optional)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Sound Setup (Optional)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-testing-verification-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Testing &amp; Verification Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="flamethrower">Flamethrower</h1>
+<div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
+    <iframe
+        src="https://www.youtube.com/embed/DMyEbaRE3YQ"
+        title="Boss AI Toolkit Tutorial"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<p>This guide details how to configure the <strong>Flamethrower</strong> combat ability for the <code>Bull Boss New</code> AI entity It covers importing and trimming animations, IK layer settings, parenting particle effects, setting up continuous hitbox damage, and attaching audio sources</p>
+<hr />
+<h2 id="1-overview-ability-configuration">1. Overview &amp; Ability Configuration</h2>
+<p>Add the Flamethrower ability to the boss's active ability entry group and adjust its probability for testing</p>
+<h3 id="steps">Steps</h3>
+<ol>
+<li>Select the <strong>Bull Boss New</strong> GameObject in the hierarchy</li>
+<li>Open the <strong>Enemy Ability System</strong> component</li>
+<li>Set the probability of other abilities (e.g., <strong>Ground Slam</strong>) to <code>0%</code> to focus on testing the Flamethrower</li>
+<li>Click <strong>Add Ability Entry Group</strong> and set the ability type to <strong>Flamethrower</strong></li>
+<li>Set <strong>Rotation Mode</strong> to <code>Rotate Only Upper Body</code></li>
+<li>Set <strong>Flamethrower Probability</strong> to <code>100%</code></li>
+</ol>
+<hr />
+<h2 id="2-animation-import-trimming-animator-setup">2. Animation Import, Trimming &amp; Animator Setup</h2>
+<p>Download the required animation asset from Mixamo, optimize it, and bind it to the animator state</p>
+<h3 id="21-importing-trimming-animation">2.1 Importing &amp; Trimming Animation</h3>
+<ol>
+<li>Go to Mixamo, search for the <strong><code>Yelling</code></strong> clip (specifically <code>Yelling Out</code>), and download it for <strong>Unity</strong></li>
+<li>Import the downloaded <code>.FBX</code> file into your project folder (e.g., <code>Mixamo Animations</code>)</li>
+<li>Select the file in the <strong>Project</strong> view and change <strong>Rig Type</strong> to <code>Humanoid</code>, then click <strong>Apply</strong></li>
+<li>Open the <strong>Animation</strong> tab in the inspector:</li>
+<li>Trim the start and end of the clip so only the core roaring/yelling duration remains</li>
+<li>Set <strong>Loop Time</strong> to Checked</li>
+<li>Set <strong>Based Upon</strong> to <code>Original</code> and click <strong>Apply</strong></li>
+</ol>
+<h3 id="22-adding-to-boss-animator">2.2 Adding to Boss Animator</h3>
+<ol>
+<li>Select <strong>Bull Boss New</strong> and expand the <strong>Animation Setup Tool</strong></li>
+<li>Drag and drop the trimmed <code>Yelling Out</code> clip into the tool and rename it to <strong><code>Roar</code></strong></li>
+<li>Click <strong>Add to Animator</strong> and <strong>Optimize Animation Clip</strong></li>
+<li><em>(Optional)</em> Delete the original <code>Yelling Out</code> FBX file</li>
+<li>Open the <strong>Animator Window</strong>:</li>
+<li>Select the <strong><code>Roar</code></strong> state node and set <strong>Speed</strong> to <code>0.2</code></li>
+<li>Select the transition from <strong>Any State -&gt; Roar</strong> and change <strong>Transition Duration</strong> to <code>0.4</code></li>
+<li>Navigate back to the <strong>Enemy Ability System</strong> on <code>Bull Boss New</code> and assign <strong><code>Roar</code></strong> as the animation clip for the Flamethrower ability</li>
+</ol>
+<blockquote>
+<p><strong>Important (Upper Body Tracking):</strong> In the <strong>Animator Window</strong>, switch to the <strong>Layers</strong> tab and check the <strong>IK Pass</strong> checkbox This ensures the boss's upper body dynamically rotates to track the target while performing the ability</p>
+</blockquote>
+<hr />
+<h2 id="3-particle-effect-bone-placement">3. Particle Effect &amp; Bone Placement</h2>
+<p>Attach the visual particle effect to the boss's head bone.</p>
+<h3 id="steps_1">Steps</h3>
+<ol>
+<li>In the <strong>Project</strong> window, search for the <strong><code>Flamethrower Loot</code></strong> particle prefab</li>
+<li>Drag <code>Flamethrower Loot</code> into the scene hierarchy</li>
+<li>In the hierarchy of <code>Bull Boss New</code>, expand the bone hierarchy:<br />
+<code>Bull Boss New -&gt; Neck -&gt; Head</code></li>
+<li>Drag and drop <code>Flamethrower VFX</code> to make it a direct child of the <strong><code>Head</code></strong> bone</li>
+<li>Adjust the local position/rotation of the particle effect to align with the head  </li>
+<li><strong>Deactivate</strong> the <code>Flamethrower VFX</code> GameObject by default</li>
+</ol>
+<hr />
+<h2 id="4-damage-area-hitbox-setup-continuous-damage">4. Damage Area &amp; Hitbox Setup (Continuous Damage)</h2>
+<p>Create an area-of-effect collider to deal continuous damage to the player during the flamethrower attack</p>
+<h3 id="41-creating-the-damage-area">4.1 Creating the Damage Area</h3>
+<ol>
+<li>Right-click the <code>Flamethrower VFX</code> GameObject -&gt; <strong>Create Empty</strong> and name it <strong><code>Damage Area</code></strong></li>
+<li>Add a <strong>Capsule Collider</strong> component:</li>
+<li>Set <strong>Direction / Axis</strong> to <code>Z-Axis</code></li>
+<li>Scale and shape the collider to match the length and spread of the flame cone</li>
+<li>Check <strong>Is Trigger</strong></li>
+</ol>
+<h3 id="42-configuring-the-continuous-hitbox">4.2 Configuring the Continuous Hitbox</h3>
+<ol>
+<li>Add a <strong>Hitbox</strong> component to the <code>Damage Area</code> GameObject</li>
+<li>Configure the properties:</li>
+<li><strong>Damage</strong>: <code>1</code></li>
+<li><strong>Owner</strong>: Drag and drop <code>Bull Boss New</code></li>
+<li><strong>Compare Enemy</strong>: Checked (Assign <code>Bull Boss New</code>)</li>
+<li><strong>Activation Mode</strong>: <code>Auto Activate On Start</code></li>
+<li><strong>Activation Delay</strong>: <code>3</code> seconds</li>
+<li><strong>Continuous Damage</strong>: Checked</li>
+<li><strong>Damage Interval</strong>: <code>0.25</code> seconds <em>(Deals 1 damage every 0.25 seconds)</em></li>
+</ol>
+<hr />
+<h2 id="5-linking-ability-parameters">5. Linking Ability Parameters</h2>
+<p>Assign the particle object and timing configuration back to the boss ability settings</p>
+<h3 id="steps_2">Steps</h3>
+<ol>
+<li>Select <code>Bull Boss New</code> in the hierarchy</li>
+<li>In the <strong>Flamethrower Ability Group</strong>, configure the following:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Recommended Value</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Effect</strong></td>
+<td style="text-align: left;">Assign <code>Flamethrower VFX</code></td>
+<td style="text-align: left;">Particle object activated during ability</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Is Particle Effect</strong></td>
+<td style="text-align: left;">Checked</td>
+<td style="text-align: left;">Tells system to handle object as a particle</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Effect Delay</strong></td>
+<td style="text-align: left;"><code>1</code> second</td>
+<td style="text-align: left;">Delay after animation starts before activating flames</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ability Lifetime</strong></td>
+<td style="text-align: left;"><code>10</code> seconds</td>
+<td style="text-align: left;">Total duration the flamethrower stays active</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Idle Delay</strong></td>
+<td style="text-align: left;"><code>1</code> second</td>
+<td style="text-align: left;">Delay before returning to idle after ability completes</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="6-sound-setup-optional">6. Sound Setup (Optional)</h2>
+<p>Add continuous loop audio for the flames</p>
+<h3 id="steps_3">Steps</h3>
+<ol>
+<li>Select the <code>Flamethrower VFX</code> GameObject in the hierarchy</li>
+<li>Right-click -&gt; <strong>Create Empty</strong> (or directly click <strong>Add Component</strong>) and select <strong>Audio Source</strong></li>
+<li>Assign your flamethrower sound effect clip to the <strong>Audio Clip</strong> field</li>
+<li>Check <strong>Play On Awake</strong></li>
+<li>Check <strong>Loop</strong><blockquote>
+<p>Since the audio source is a child of the <code>Flamethrower VFX</code> object, the sound automatically plays when the particle effect is enabled and stops when disabled</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h2 id="7-testing-verification-checklist">7. Testing &amp; Verification Checklist</h2>
+<ul>
+<li>[ ] <strong>IK Pass</strong>: Checked in the Animator Layer settings (enables body tracking while flaming)</li>
+<li>[ ] <strong>Flamethrower Object</strong>: Disabled/Deactivated in hierarchy by default</li>
+<li>[ ] <strong>Continuous Hitbox</strong>: <code>Continuous Damage</code> box checked with proper <code>Damage Interval</code></li>
+<li>[ ] <strong>Targeting Behavior</strong>: When player walks behind the boss, the boss stops the ability, turns to face the player, and resumes attacking</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026 <a href="Mobile Action Kit" target="_blank" rel="noopener">BossAIToolkit</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.com/invite/BeGy5hhyNj" target="_blank" rel="noopener" title="discord.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://mail.google.com/" target="_blank" rel="noopener" title="mail.google.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "search.highlight", "content.tabs.link", "content.code.annotation", "content.copy.code", "prev_next_buttons"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

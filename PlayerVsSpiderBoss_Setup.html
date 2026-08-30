@@ -1,0 +1,1961 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://sourav1570.github.io/Boss-AI-Toolkit-Documentation/PlayerVsSpiderBoss_Setup.html">
+      
+      
+        <link rel="prev" href="PlayerVsBoss_Setup.html">
+      
+      
+        <link rel="next" href="KnightEnemySetup.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Player Vs Spider Boss Setup - DOCUMENTATION</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#player-vs-spider-boss-setup" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="DOCUMENTATION" class="md-header__button md-logo" aria-label="DOCUMENTATION" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DOCUMENTATION
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Player Vs Spider Boss Setup
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="white"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="black"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="GettingStarted.html" class="md-tabs__link">
+          
+  
+  
+  BOSS AI TOOLKIT
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="DOCUMENTATION" class="md-nav__button md-logo" aria-label="DOCUMENTATION" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DOCUMENTATION
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BOSS AI TOOLKIT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    BOSS AI TOOLKIT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GettingStarted.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="FirstBossSetup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    First Boss Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="NonCombatBehaviour.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non Combat Behaviour
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SmartTurningBehaviour.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smart Turning Behaviour
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PreCombatBehaviour.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pre Combat Behaviour
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MeleeAttack.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Melee Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GroundSlam.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ground Slam
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="FlameThrower.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flame Thrower
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Charging.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Charging Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="JumpAttack.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jump Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Teleportation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teleportation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChaseAndAttack.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chase And Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MeteorStrike.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meteor Strike
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Throw_Weapon.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Throw Weapon
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ProjectileAttack.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projectile Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Throw_Objects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Throw Objects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Spit_Attack.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spit Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Summon_Minions.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summon Minions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Boss_Voices.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boss Voices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Player_Setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Player Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PC_Controls.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PC Controls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BossHealth.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boss Health System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PlayerVsBoss_Setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Player Vs Boss Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Player Vs Spider Boss Setup
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="PlayerVsSpiderBoss_Setup.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Player Vs Spider Boss Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-initial-scene-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Initial Scene Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Initial Scene Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-cloning-boss-ai-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Cloning Boss AI Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Cloning Boss AI Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-hierarchy-visual-gameobjects-transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Hierarchy &amp; Visual GameObjects Transfer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Hierarchy &amp; Visual GameObjects Transfer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-animator-animation-replacement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Animator &amp; Animation Replacement
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Animator &amp; Animation Replacement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-41-controller-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4.1: Controller Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-42-replacing-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4.2: Replacing Clips
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-dissolve-teleportation-material-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Dissolve &amp; Teleportation Material Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Dissolve &amp; Teleportation Material Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-global-settings-ability-adjustments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Global Settings &amp; Ability Adjustments
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Global Settings &amp; Ability Adjustments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#global-ui-parameter-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global &amp; UI Parameter Tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teleportation-ability-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teleportation Ability Tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flamethrower-ability-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flamethrower Ability Tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-hitbox-controller-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Hitbox Controller Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Hitbox Controller Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-verification-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Verification Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="KnightEnemySetup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Knight Enemy Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SpearCapturerEnemySetup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spear Capturer Enemy Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SpearSpawnerEnemySetup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spear Spawner Enemy Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RockThrowerEnemySetup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rock Thrower Enemy Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ArcherEnemySetup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archer Enemy Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-initial-scene-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Initial Scene Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Initial Scene Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-cloning-boss-ai-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Cloning Boss AI Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Cloning Boss AI Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-hierarchy-visual-gameobjects-transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Hierarchy &amp; Visual GameObjects Transfer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Hierarchy &amp; Visual GameObjects Transfer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-animator-animation-replacement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Animator &amp; Animation Replacement
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Animator &amp; Animation Replacement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-41-controller-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4.1: Controller Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-42-replacing-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4.2: Replacing Clips
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-dissolve-teleportation-material-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Dissolve &amp; Teleportation Material Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Dissolve &amp; Teleportation Material Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-global-settings-ability-adjustments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Global Settings &amp; Ability Adjustments
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Global Settings &amp; Ability Adjustments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#global-ui-parameter-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global &amp; UI Parameter Tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teleportation-ability-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teleportation Ability Tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flamethrower-ability-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flamethrower Ability Tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-hitbox-controller-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Hitbox Controller Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Hitbox Controller Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-verification-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Verification Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="player-vs-spider-boss-setup">Player Vs Spider Boss Setup</h1>
+<div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
+    <iframe
+        src="https://www.youtube.com/embed/VjdP2Cb3cAY"  
+        title="Boss AI Toolkit Tutorial"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<p>This setup provides a guide to setting up and configuring the <strong>Spider Boss</strong> using assets from the Mobile Spider and Worm Pack in Unity. It details how to clone configuration settings from an existing boss (such as the Bull Boss), swap/replace animations, reassign body nodes and visual components, configure specialized abilities, and set up hitbox collision.</p>
+<hr />
+<h2 id="1-initial-scene-setup">1. Initial Scene Setup</h2>
+<p>Import and unpack the spider model and set up the duplication base.</p>
+<h3 id="steps">Steps</h3>
+<ol>
+<li>Navigate to <code>Mobile Spider and Worm Pack &gt; Spider &gt; FBX</code> in the Project window and drag the spider model into your scene hierarchy.</li>
+<li>Apply your preferred texture (e.g., <code>fire</code> texture).</li>
+<li>Right-click the spider GameObject in the hierarchy and select <strong>Prefab &gt; Unpack Completely</strong>.</li>
+<li>Duplicate the existing <strong>Bull Boss New</strong> GameObject in the hierarchy to serve as the cloning source, then deactivate the original.</li>
+</ol>
+<hr />
+<h2 id="2-cloning-boss-ai-configuration">2. Cloning Boss AI Configuration</h2>
+<p>Transfer components, scripts, and settings from the source boss to the spider using the toolkit cloning tool.</p>
+<h3 id="steps_1">Steps</h3>
+<ol>
+<li>Navigate to the top menu: <strong>Tools &gt; Boss AI Toolkit &gt; Duplicate Enemy</strong>.</li>
+<li>Configure the tool parameters:</li>
+<li><strong>Source Boss</strong>: Drag in the duplicated <code>Bull Boss New</code> GameObject.</li>
+<li><strong>Target Boss</strong>: Drag in the unpacked <code>Spider</code> GameObject (rename it to <strong>Spider Boss</strong>).</li>
+<li><strong>Target Avatar</strong>: Select and assign the <code>Spider Avatar</code> from the project files.</li>
+<li>Click <strong>Start Cloning Configuration</strong> and close the window upon completion.</li>
+</ol>
+<hr />
+<h2 id="3-hierarchy-visual-gameobjects-transfer">3. Hierarchy &amp; Visual GameObjects Transfer</h2>
+<p>Re-parent child GameObjects and attach effect origins to the spider rig.</p>
+<p>Spider Boss (Root)
+├── Spider Rig / Bones
+│    └── Neck / Head Bone
+│         └── Flamethrower Visual Effect Object
+└── Projectiles / Effects (Transferred from Bull Boss)
+├── Shockwave Effect
+├── Stone / Rock Object
+└── Teleportation Visual Effects</p>
+<h3 id="steps_2">Steps</h3>
+<ol>
+<li>Snap the position of <strong>Spider Boss</strong> to match <strong>Bull Boss New</strong>.</li>
+<li>Move necessary child objects (effects, projectiles, stones) from the Bull Boss hierarchy to <strong>Spider Boss</strong>.</li>
+<li>Attach the <strong>Flamethrower</strong> effect object to the spider's neck bone (<code>Spider Rig &gt; Neck</code>).</li>
+<li>Remove unneeded weapon GameObjects transferred from the Bull Boss.</li>
+<li>Delete the empty Bull Boss source hierarchy from the scene.</li>
+</ol>
+<hr />
+<h2 id="4-animator-animation-replacement">4. Animator &amp; Animation Replacement</h2>
+<p>Duplicate the controller and substitute animation clips using the Animator Clip Replacer tool.</p>
+<h3 id="step-41-controller-setup">Step 4.1: Controller Setup</h3>
+<ol>
+<li>Duplicate the source Animator Controller asset in the Project window and rename it to <strong><code>Spider Boss Animator Controller</code></strong>.</li>
+<li>Assign <strong>Spider Boss Animator Controller</strong> to the <strong>Animator</strong> component on <strong>Spider Boss</strong>.</li>
+</ol>
+<h3 id="step-42-replacing-clips">Step 4.2: Replacing Clips</h3>
+<ol>
+<li>Open <strong>Tools &gt; Boss AI Toolkit &gt; Animator Clip Replacer</strong>.</li>
+<li>Assign the <strong>Spider Boss Animator Controller</strong>.</li>
+<li>Replace the Bull Boss clips with corresponding Spider FBX clips:</li>
+<li><strong>Idle</strong> -&gt; <code>Spider Idle</code></li>
+<li><strong>Walking/Movement</strong> -&gt; <code>Spider Crawl Backward</code> <em>(Set clip speed to <code>-1</code> in the Animator to make it walk forward)</em></li>
+<li><strong>Hit Reactions</strong> -&gt; Assign <code>Hit 1</code> to <strong>hit reaction one</strong> and <strong>hit reaction two</strong>.</li>
+<li>Remove unused weapon state nodes (e.g., <code>Equipped Weapon</code>, <code>Unequipped Weapon</code>).</li>
+<li>Uncheck <strong>IK Pass</strong> on the Animator layer if hand/foot IK is not required.</li>
+</ol>
+<hr />
+<h2 id="5-dissolve-teleportation-material-setup">5. Dissolve &amp; Teleportation Material Setup</h2>
+<p>Reconfigure skin mesh renderers and dissolve materials for teleportation and spawn/death FX.</p>
+<h3 id="steps_3">Steps</h3>
+<ol>
+<li>Select <strong>Spider Boss</strong> and expand the <strong>Enemy Dissolve Controller</strong> component.</li>
+<li>Remove weapon dissolve entries from the array.</li>
+<li>Configure skin dissolve entries:</li>
+<li><strong>Skin Mesh Renderer</strong>: Drag in the <code>Spider Rig Skinned Mesh Renderer</code>.</li>
+<li><strong>Renderer Type</strong>: Set to <code>Skinned Mesh Renderer</code>.</li>
+<li><strong>Original Material</strong>: Assign the default spider material.</li>
+<li><strong>Dissolve Material</strong>: Assign the spider-specific dissolve material.</li>
+</ol>
+<hr />
+<h2 id="6-global-settings-ability-adjustments">6. Global Settings &amp; Ability Adjustments</h2>
+<p>Fine-tune movement, rotation, and custom ability parameters for the spider model.</p>
+<h3 id="global-ui-parameter-tuning">Global &amp; UI Parameter Tuning</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Recommended Value</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Rotation Speed</strong></td>
+<td style="text-align: left;"><code>300</code></td>
+<td style="text-align: left;">Adjusts turning speed for spider movement.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Smooth Look Rotation Delay</strong></td>
+<td style="text-align: left;"><code>2.0</code> seconds</td>
+<td style="text-align: left;">Delay window allowing player attacks before boss tracks.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Rotate Spine Bone</strong></td>
+<td style="text-align: left;"><code>Unchecked</code></td>
+<td style="text-align: left;">Disabled since the spider does not utilize a single spine pivot.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Hit Interval (Min / Max)</strong></td>
+<td style="text-align: left;"><code>2</code> / <code>2</code> seconds</td>
+<td style="text-align: left;">Cooldown interval between hit reactions.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="teleportation-ability-tuning">Teleportation Ability Tuning</h3>
+<ol>
+<li>Register custom clips using the <strong>Animation Setup Tool</strong>:</li>
+<li>Add <code>Get In Ground</code> (Parameter Name: <strong><code>get in ground</code></strong>)</li>
+<li>Add <code>Get Out Of Ground</code> (Parameter Name: <strong><code>get out of ground</code></strong>)</li>
+<li>Under <strong>Teleportation Ability</strong>:</li>
+<li>Set <strong>Disappear Animation</strong> to <code>get out of ground</code>.</li>
+<li>Set <strong>Appear Animation</strong> to <code>get in ground</code>.</li>
+<li>Enable <strong>Spawn Behind Target</strong>.</li>
+<li>Assign teleportation particle effects and set <strong>Idle Delay</strong> to <code>0</code>.</li>
+</ol>
+<h3 id="flamethrower-ability-tuning">Flamethrower Ability Tuning</h3>
+<ul>
+<li>Set <strong>Rotation Mode</strong> to <strong><code>Rotate Full Body</code></strong>.</li>
+<li>Assign the head/neck-mounted flamethrower particle origin.</li>
+<li>Set <strong>Rotation Speed</strong> to <code>50</code> and <strong>Spine Rotation Speed</strong> to <code>0</code>.</li>
+</ul>
+<hr />
+<h2 id="7-hitbox-controller-setup">7. Hitbox Controller Setup</h2>
+<p>Configure manual hitboxes to deal damage during attack animations.</p>
+<h3 id="steps_4">Steps</h3>
+<ol>
+<li>Create a child GameObject named <code>Hitbox</code> under <strong>Spider Boss</strong>.</li>
+<li>Add a <strong>Capsule Collider</strong> component, adjust its bounds over the spider's attack area, and check <strong>Is Trigger</strong>.</li>
+<li>Add the <strong>Hitbox</strong> script component:</li>
+<li><strong>Damage Value</strong>: Set desired damage output.</li>
+<li><strong>Owner</strong>: Drag the <strong>Spider Boss</strong> reference.</li>
+<li><strong>Team Member</strong>: Assign the team member reference script.</li>
+<li><strong>Activation Mode</strong>: Set to <strong><code>Manual</code></strong>.</li>
+<li>Check <strong>Deactivate Hitbox On Hit</strong> and <strong>Deactivate Hitbox After Time</strong>.</li>
+<li>Open the Unity <strong>Animation Window</strong>, select attack clips (duplicate clips if read-only), and add animation events:</li>
+<li><strong>Start of attack frame</strong>: Call <code>HitboxController.ActivateHitbox()</code>.</li>
+<li><strong>End of attack frame</strong>: Call <code>HitboxController.DeactivateHitbox()</code>.</li>
+</ol>
+<hr />
+<h2 id="8-verification-checklist">8. Verification Checklist</h2>
+<p>Before running tests in Play Mode, check the following configuration settings:</p>
+<ul>
+<li>[ ] <strong>Cloned Configuration</strong>: Settings cloned from source boss and avatar assigned.</li>
+<li>[ ] <strong>Animator Assigned</strong>: Duplicated <code>Spider Boss Animator Controller</code> assigned.</li>
+<li>[ ] <strong>Forward Walk Animation</strong>: Backward crawl animation speed set to <code>-1</code> in the Animator.</li>
+<li>[ ] <strong>Hierarchy Re-parented</strong>: Visual effects (flamethrower, ground slam) parented to the spider rig.</li>
+<li>[ ] <strong>Dissolve Materials Mapped</strong>: Skinned mesh renderer and spider dissolve materials linked.</li>
+<li>[ ] <strong>Hitbox Events Configured</strong>: Animation events set to trigger and deactivate hitboxes during attack animations.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026 <a href="Mobile Action Kit" target="_blank" rel="noopener">BossAIToolkit</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.com/invite/BeGy5hhyNj" target="_blank" rel="noopener" title="discord.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://mail.google.com/" target="_blank" rel="noopener" title="mail.google.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "search.highlight", "content.tabs.link", "content.code.annotation", "content.copy.code", "prev_next_buttons"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

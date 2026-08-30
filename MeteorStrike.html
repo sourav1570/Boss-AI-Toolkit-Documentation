@@ -1,0 +1,1908 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://sourav1570.github.io/Boss-AI-Toolkit-Documentation/MeteorStrike.html">
+      
+      
+        <link rel="prev" href="ChaseAndAttack.html">
+      
+      
+        <link rel="next" href="Throw_Weapon.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Meteor Strike - DOCUMENTATION</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#meteor-strike" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="DOCUMENTATION" class="md-header__button md-logo" aria-label="DOCUMENTATION" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DOCUMENTATION
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Meteor Strike
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="white"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="black"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="GettingStarted.html" class="md-tabs__link">
+          
+  
+  
+  BOSS AI TOOLKIT
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="DOCUMENTATION" class="md-nav__button md-logo" aria-label="DOCUMENTATION" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DOCUMENTATION
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BOSS AI TOOLKIT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    BOSS AI TOOLKIT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GettingStarted.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="FirstBossSetup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    First Boss Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="NonCombatBehaviour.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Non Combat Behaviour
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SmartTurningBehaviour.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smart Turning Behaviour
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PreCombatBehaviour.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pre Combat Behaviour
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MeleeAttack.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Melee Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GroundSlam.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ground Slam
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="FlameThrower.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flame Thrower
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Charging.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Charging Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="JumpAttack.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jump Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Teleportation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teleportation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ChaseAndAttack.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chase And Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meteor Strike
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="MeteorStrike.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meteor Strike
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-combat-ability-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Combat Ability Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Combat Ability Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-magic-area-animation-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Magic Area Animation Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Magic Area Animation Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-visual-fx-lightning-aura-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Visual FX (Lightning Aura) Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Visual FX (Lightning Aura) Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-meteor-prefab-hitbox-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Meteor Prefab &amp; Hitbox Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Meteor Prefab &amp; Hitbox Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-41-hitbox-physics-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4.1: Hitbox &amp; Physics Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-42-team-member-component-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4.2: Team Member Component Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-43-apply-changes-to-prefab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4.3: Apply Changes to Prefab
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-spawning-timing-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Spawning &amp; Timing Parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Spawning &amp; Timing Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-particle-auto-fade-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Particle Auto-Fade Optimization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Particle Auto-Fade Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-61-particle-duration-modification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6.1: Particle Duration Modification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-62-adding-particle-auto-fade-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6.2: Adding Particle Auto Fade Component
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-verification-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Verification Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Throw_Weapon.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Throw Weapon
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ProjectileAttack.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projectile Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Throw_Objects.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Throw Objects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Spit_Attack.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spit Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Summon_Minions.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summon Minions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Boss_Voices.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boss Voices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Player_Setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Player Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PC_Controls.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PC Controls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BossHealth.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boss Health System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PlayerVsBoss_Setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Player Vs Boss Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PlayerVsSpiderBoss_Setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Player Vs Spider Boss Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="KnightEnemySetup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Knight Enemy Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SpearCapturerEnemySetup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spear Capturer Enemy Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SpearSpawnerEnemySetup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spear Spawner Enemy Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RockThrowerEnemySetup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rock Thrower Enemy Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ArcherEnemySetup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archer Enemy Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-combat-ability-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Combat Ability Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Combat Ability Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-magic-area-animation-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Magic Area Animation Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Magic Area Animation Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-visual-fx-lightning-aura-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Visual FX (Lightning Aura) Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Visual FX (Lightning Aura) Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-meteor-prefab-hitbox-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Meteor Prefab &amp; Hitbox Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Meteor Prefab &amp; Hitbox Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-41-hitbox-physics-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4.1: Hitbox &amp; Physics Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-42-team-member-component-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4.2: Team Member Component Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-43-apply-changes-to-prefab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4.3: Apply Changes to Prefab
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-spawning-timing-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Spawning &amp; Timing Parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Spawning &amp; Timing Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#steps_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-particle-auto-fade-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Particle Auto-Fade Optimization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Particle Auto-Fade Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-61-particle-duration-modification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6.1: Particle Duration Modification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-62-adding-particle-auto-fade-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6.2: Adding Particle Auto Fade Component
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-verification-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Verification Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="meteor-strike">Meteor Strike</h1>
+<div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
+    <iframe
+        src="https://www.youtube.com/embed/WyJ2P5S2jVI"
+        title="Boss AI Toolkit Tutorial"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<p>This setup provides a comprehensive step-by-step guide for setting up the <strong>Meteor Strike Ability</strong> on the <strong>Bull Boss</strong> using the Boss AI Toolkit in Unity. It covers ability configuration, animation setup, prefab damage/hitbox configuration, particle fading optimization, and visual effects setup.</p>
+<hr />
+<h2 id="1-combat-ability-configuration">1. Combat Ability Configuration</h2>
+<p>Set up the Meteor Strike ability parameters in the <strong>Enemy Ability System</strong> and isolate the ability to facilitate testing.</p>
+<h3 id="steps">Steps</h3>
+<ol>
+<li>Select the <strong>Bull Boss</strong> GameObject in your scene hierarchy.</li>
+<li>In the Inspector, navigate to the <strong>Enemy Ability System</strong> component and add a new ability to the group.</li>
+<li>Set the <strong>Ability Type</strong> to <strong>Meteor Strike</strong>.</li>
+<li>Adjust probabilities for testing isolation:</li>
+<li>Set <strong>Chase and Attack Probability</strong> (and other abilities) to <code>0%</code>.</li>
+<li>Set <strong>Meteor Strike Probability</strong> to <code>100%</code>.</li>
+<li>Configure target and animation parameters:</li>
+<li><strong>Look Mode</strong>: Set to <code>Target</code>.</li>
+<li><strong>Idle Animation</strong>: Set to <code>Idle</code>.</li>
+<li><strong>Idle Delay</strong>: Set to <code>1</code> second.</li>
+</ol>
+<hr />
+<h2 id="2-magic-area-animation-setup">2. Magic Area Animation Setup</h2>
+<p>If the <code>magic area</code> animation is not currently present on your animator controller, use the <strong>Animation Setup Tool</strong> to add it.</p>
+<h3 id="steps_1">Steps</h3>
+<ol>
+<li>In the project folder, locate the animation clip named <strong><code>spell_01</code></strong> inside <code>Boss AI Toolkit -&gt; Animations</code>.</li>
+<li>Select the <strong>Bull Boss</strong> GameObject.</li>
+<li>Open the <strong>Animation Setup Tool</strong>.</li>
+<li>Add the <strong><code>spell_01</code></strong> animation clip and rename its parameter to <strong><code>magic area</code></strong>.</li>
+<li>Click <strong>Add to Animator Controller</strong>.</li>
+<li>Return to the <strong>Meteor Strike</strong> ability parameters in the Inspector and select <strong><code>magic area</code></strong> from the magic animation dropdown list.</li>
+</ol>
+<hr />
+<h2 id="3-visual-fx-lightning-aura-integration">3. Visual FX (Lightning Aura) Integration</h2>
+<p>Assign an aura effect to play on the boss during the ability casting phase.</p>
+<h3 id="steps_2">Steps</h3>
+<ol>
+<li>Search for <strong><code>lightning aura</code></strong> in the Project window and add it under the <strong>Bull Boss</strong> hierarchy.</li>
+<li>Ensure the <code>lightning aura</code> GameObject is <strong>deactivated</strong> by default in the scene hierarchy.</li>
+<li>Select the <strong>Bull Boss</strong> GameObject.</li>
+<li>Drag and drop the <code>lightning aura</code> GameObject into the <strong>Effects</strong> field under the Meteor Strike ability settings.</li>
+</ol>
+<hr />
+<h2 id="4-meteor-prefab-hitbox-setup">4. Meteor Prefab &amp; Hitbox Setup</h2>
+<p>Prepare the <strong>Meteor AOE</strong> prefab with physics colliders, a custom hitbox script, and team detection to properly damage the player.</p>
+<h3 id="step-41-hitbox-physics-setup">Step 4.1: Hitbox &amp; Physics Setup</h3>
+<ol>
+<li>Search for the <strong><code>Meteor AOE</code></strong> prefab inside the <code>Hovl Studio</code> folder and drag it into the scene hierarchy.</li>
+<li>Right-click the <strong>Meteor AOE</strong> object -&gt; <strong>Create Empty</strong> and name it <strong><code>Hitbox</code></strong>.</li>
+<li>Select <strong>Hitbox</strong> and click <strong>Add Component</strong> -&gt; <strong>Hitbox</strong>:</li>
+<li><strong>Auto Activate On Start</strong>: Checked.</li>
+<li><strong>Activation Delay</strong>: <code>0.3</code> seconds.</li>
+<li><strong>Damage</strong>: <code>1</code>.</li>
+<li><strong>Continuous Damage</strong>: Checked.</li>
+<li><strong>Damage Interval</strong>: <code>0.25</code> seconds.</li>
+<li><strong>Deactivate Hitbox On Hit</strong>: Unchecked.</li>
+<li><strong>Deactivate Hitbox After Time</strong>: Unchecked.</li>
+<li>Add a <strong>Sphere Collider</strong> to the <strong>Meteor AOE</strong> parent prefab:</li>
+<li>Adjust the sphere size to fit the intended area of effect.</li>
+<li>Check <strong>Is Trigger</strong>.</li>
+</ol>
+<h3 id="step-42-team-member-component-setup">Step 4.2: Team Member Component Setup</h3>
+<ol>
+<li>Select <strong>Meteor AOE</strong> and click <strong>Add Component</strong> -&gt; <strong>Team Member</strong>.</li>
+<li>Set <strong>My Body Part Target</strong> to <code>Meteor Strike</code> (or the root Meteor AOE object).</li>
+<li>Copy the exact <strong>Team Name</strong> string from the <strong>Bull Boss</strong> and paste it into the <strong>Team Member</strong> component on the meteor.</li>
+<li>Check <strong>Compare Enemy</strong>.</li>
+<li>Drag and drop the <strong>Meteor AOE</strong> GameObject into the <strong>Owner</strong> reference slot.</li>
+</ol>
+<h3 id="step-43-apply-changes-to-prefab">Step 4.3: Apply Changes to Prefab</h3>
+<ol>
+<li>Click <strong>Overrides -&gt; Apply All</strong> at the top of the Inspector on <strong>Meteor AOE</strong> to save changes.</li>
+<li>Delete the temporary <strong>Meteor AOE</strong> instance from the scene hierarchy.</li>
+</ol>
+<hr />
+<h2 id="5-spawning-timing-parameters">5. Spawning &amp; Timing Parameters</h2>
+<p>Configure how many meteors drop, their lifetime, and their spatial distribution around the player target.</p>
+<h3 id="steps_3">Steps</h3>
+<p>Select the <strong>Bull Boss</strong> GameObject and configure the following parameters under <strong>Meteor Strike</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Recommended Value</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Spawn From Targets</strong></td>
+<td style="text-align: left;">Checked</td>
+<td style="text-align: left;">Spawns meteors relative to player location.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Spawn Range</strong></td>
+<td style="text-align: left;"><code>20</code> meters</td>
+<td style="text-align: left;">Maximum radius around target where meteors land.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Distance Between Spawned Objects</strong></td>
+<td style="text-align: left;"><code>6</code> meters</td>
+<td style="text-align: left;">Minimum spatial separation between individual meteors.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Prefab Slot</strong></td>
+<td style="text-align: left;"><code>Meteor AOE</code> Prefab</td>
+<td style="text-align: left;">The configured meteor prefab.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Spawn Count</strong></td>
+<td style="text-align: left;"><code>5</code></td>
+<td style="text-align: left;">Total number of meteors spawned per ability.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Delay Between Spawn</strong></td>
+<td style="text-align: left;"><code>1</code> second</td>
+<td style="text-align: left;">Delay before initiating the spawn wave.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Delay Between Each Spawn</strong></td>
+<td style="text-align: left;"><code>1</code> second</td>
+<td style="text-align: left;">interval between each meteor dropping.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Spawned Objects Lifetime</strong></td>
+<td style="text-align: left;"><code>10</code> seconds</td>
+<td style="text-align: left;">Duration before the meteor prefab object is destroyed.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="6-particle-auto-fade-optimization">6. Particle Auto-Fade Optimization</h2>
+<p>To prevent particle looping bugs (where 5-second particle systems restart when <code>Spawned Objects Lifetime</code> is set to 10 seconds), configure particle looping and smooth fade-out behavior.</p>
+<h3 id="step-61-particle-duration-modification">Step 6.1: Particle Duration Modification</h3>
+<ol>
+<li>Drag the <strong><code>Meteor AOE</code></strong> prefab back into the scene.</li>
+<li>Select all child particle systems attached to the meteor asset.</li>
+<li>Change the <strong>Duration</strong> setting on all child particle components from <code>5</code> seconds to <strong><code>1</code> second</strong> so particles spawn continuously without abruptly looping over long durations.</li>
+</ol>
+<h3 id="step-62-adding-particle-auto-fade-component">Step 6.2: Adding Particle Auto Fade Component</h3>
+<ol>
+<li>Select the root <strong>Meteor AOE</strong> object and click <strong>Add Component</strong> -&gt; <strong>Particle Auto Fade</strong>.</li>
+<li>Set <strong>Total Lifetime</strong> to <strong><code>10</code> seconds</strong> (matching the <code>Spawned Objects Lifetime</code>).</li>
+<li>Set <strong>Fade Duration</strong> to <strong><code>5</code> seconds</strong> (allowing a 5-second active phase followed by a 5-second smooth fade out).</li>
+<li>Lock the Inspector window.</li>
+<li>Highlight all child particle system components under <strong>Meteor AOE</strong> and drag them into the <strong>Particle References</strong> array field.</li>
+<li>Click <strong>Overrides -&gt; Apply All</strong> to update the prefab asset.</li>
+<li>Unlock the Inspector and remove the instance from the hierarchy.</li>
+</ol>
+<hr />
+<h2 id="7-verification-checklist">7. Verification Checklist</h2>
+<p>Before running the scene to test the Meteor Strike ability, verify the following:</p>
+<ul>
+<li>[ ] <strong>Probabilities</strong>: Meteor Strike probability is <code>100%</code>, and other abilities are <code>0%</code>.</li>
+<li>[ ] <strong>Animation</strong>: <code>magic area</code> animation clip is selected.</li>
+<li>[ ] <strong>VFX State</strong>: <code>lightning aura</code> is disabled in the hierarchy and assigned to the <strong>Effects</strong> field.</li>
+<li>[ ] <strong>Collider</strong>: A <strong>Sphere Collider</strong> with <strong>Is Trigger</strong> checked is attached to <code>Meteor AOE</code>.</li>
+<li>[ ] <strong>Damage Settings</strong>: <code>Continuous Damage</code> is enabled with <code>0.25s</code> interval and <code>0.3s</code> activation delay.</li>
+<li>[ ] <strong>Fade Sync</strong>: <code>Particle Auto Fade</code> total lifetime (<code>10s</code>) matches <code>Spawned Objects Lifetime</code> (<code>10s</code>).</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026 <a href="Mobile Action Kit" target="_blank" rel="noopener">BossAIToolkit</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.com/invite/BeGy5hhyNj" target="_blank" rel="noopener" title="discord.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://mail.google.com/" target="_blank" rel="noopener" title="mail.google.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "search.highlight", "content.tabs.link", "content.code.annotation", "content.copy.code", "prev_next_buttons"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
